@@ -242,7 +242,7 @@ public class Syslog2DB implements Runnable {
 			try {
 				Users users = new Users(xapsCp);
 				Identity id = new Identity(5, SyslogServlet.version, users.getUnprotected(Users.USER_ADMIN));
-				syslog = new Syslog(syslogCp, id);
+				syslog = new Syslog(syslogCp, id, Properties.getMaxDBCommitQueue(), Properties.getMinDBCommitDelay());
 				if (Properties.isSimulation()) {
 					syslog.setSimulationMode(true);
 					logger.warn("Syslog server runs in simulation mode, collector timestamp will be populated with device timestamp *if* they differ from 1 Jan 00:00:00");
