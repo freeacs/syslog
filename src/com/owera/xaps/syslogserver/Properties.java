@@ -2,6 +2,7 @@ package com.owera.xaps.syslogserver;
 
 import com.owera.common.log.Logger;
 import com.owera.common.util.PropertyReader;
+import com.owera.xaps.dbi.Syslog;
 
 public class Properties {
 
@@ -80,6 +81,14 @@ public class Properties {
 
 	public static String getDeviceIdPattern(int index) {
 		return getString("deviceid-pattern." + index, null);
+	}
+	
+	public static int getMaxDBCommitQueue() {
+		return getInteger("max-syslog-db-commit-queue", Syslog.defaultMaxInsertCount);
+	}
+	
+	public static int getMinDBCommitDelay() {
+		return getInteger("min-syslog-db-commit-delay", Syslog.defaultMinTmsDelay);
 	}
 
 }
