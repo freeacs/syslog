@@ -1,3 +1,5 @@
+v1.4.30 (2014-12-19)
+- lib: dbi v1.74.37 - a severe bug was fixed (matching of groups in a job)
 v1.4.29 (2013-04-27)
 - lib: v1.74.32 (bugfix on parameter-search (operand-usage and NULL-values and group-parameter matching))
 v1.4.28 (2013-05-24)
