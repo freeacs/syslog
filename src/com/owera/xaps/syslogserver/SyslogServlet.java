@@ -30,7 +30,7 @@ public class SyslogServlet extends HttpServlet {
 
 	public static SyslogServer server = null;
 
-	public static String version = "1.4.30";
+	public static String version = "1.4.31";
 
 	private static Logger logger = new Logger(SyslogServlet.class);
 
