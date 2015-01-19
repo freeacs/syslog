@@ -1,4 +1,6 @@
-v1.4.31 (2014-12-19)
+v1.4.32 (2015-01-19)
+- lib: dbi v1.74.39 - a bug regarding timestamps sent to syslog from other freeacs modules - they did not change year correctly (2nd attempt)
+v1.4.31 (2015-01-19)
 - lib: dbi v1.74.38 - a bug regarding timestamps sent to syslog from other freeacs modules - they did not change year correctly
 v1.4.30 (2014-12-19)
 - lib: dbi v1.74.37 - a severe bug was fixed (matching of groups in a job)
